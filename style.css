@@ -491,3 +491,59 @@ height:100vh;
 }
 
 }
+/* ========================= */
+/* PHASE 5 */
+/* ========================= */
+
+.memory-wheel,
+.ending{
+    width:90%;
+    max-width:1000px;
+    margin:120px auto;
+    text-align:center;
+}
+
+.memory-wheel h2,
+.ending h1{
+    color:gold;
+    margin-bottom:30px;
+}
+
+.wheel-box{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:40px;
+}
+
+#memoryBtn,
+#loveBtn{
+    background:gold;
+    color:#08111f;
+    border:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.4s;
+}
+
+#memoryBtn:hover,
+#loveBtn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px gold;
+}
+
+#memoryText{
+    margin-top:30px;
+    font-size:22px;
+    color:white;
+}
+
+.ending p{
+    max-width:700px;
+    margin:30px auto;
+    line-height:2;
+    font-size:20px;
+}
