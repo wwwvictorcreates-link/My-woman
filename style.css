@@ -21,33 +21,6 @@ body{
 }
 
 /* =========================
-   LOADER
-========================= */
-
-#loader{
-    position:fixed;
-    inset:0;
-    background:#07152f;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    z-index:9999;
-}
-
-.loader-heart{
-    font-size:70px;
-    animation:heartbeat 1s infinite;
-}
-
-#loader h2{
-    margin-top:20px;
-    color:#FFD700;
-    font-family:'Dancing Script',cursive;
-    font-size:36px;
-}
-
-/* =========================
    HERO
 ========================= */
 
