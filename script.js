@@ -75,3 +75,94 @@ alert(messages[index]);
 });
 
 });
+/* ================================= */
+/* PHASE 3 */
+/* ================================= */
+
+/* Show More Gallery */
+
+const showMoreBtn = document.getElementById("showMoreBtn");
+
+if(showMoreBtn){
+
+showMoreBtn.addEventListener("click",()=>{
+
+document.querySelectorAll(".extra-photo").forEach(photo=>{
+
+photo.classList.remove("hidden");
+
+});
+
+showMoreBtn.style.display="none";
+
+});
+
+}
+
+/* Forever Counter */
+
+const startDate = new Date("2026-07-06T00:00:00");
+
+function updateCounter(){
+
+const now = new Date();
+
+const difference = now - startDate;
+
+const days = Math.floor(difference / (1000*60*60*24));
+
+const hours = Math.floor((difference/(1000*60*60))%24);
+
+const minutes = Math.floor((difference/(1000*60))%60);
+
+const seconds = Math.floor((difference/1000)%60);
+
+const dayEl=document.getElementById("days");
+const hourEl=document.getElementById("hours");
+const minuteEl=document.getElementById("minutes");
+const secondEl=document.getElementById("seconds");
+
+if(dayEl){
+
+dayEl.textContent=days;
+hourEl.textContent=hours;
+minuteEl.textContent=minutes;
+secondEl.textContent=seconds;
+
+}
+
+}
+
+setInterval(updateCounter,1000);
+
+updateCounter();
+
+/* Simple Typing Effect */
+
+const typing=document.getElementById("typingText");
+
+if(typing){
+
+const fullText=typing.innerHTML;
+
+typing.innerHTML="";
+
+let i=0;
+
+function typeLetter(){
+
+if(i<fullText.length){
+
+typing.innerHTML+=fullText.charAt(i);
+
+i++;
+
+setTimeout(typeLetter,25);
+
+}
+
+}
+
+typeLetter();
+
+    }
