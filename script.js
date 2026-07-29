@@ -3,24 +3,8 @@
    Premium Script
 ========================================= */
 
-const loader = document.getElementById("loader");
 const beginBtn = document.getElementById("beginBtn");
 const music = document.getElementById("bgMusic");
-
-/* =========================
-   LOADING SCREEN
-========================= */
-
-window.addEventListener("load", () => {
-    setTimeout(() => {
-        loader.style.opacity = "0";
-
-        setTimeout(() => {
-            loader.style.display = "none";
-        }, 1000);
-
-    }, 2000);
-});
 
 /* =========================
    MUSIC
