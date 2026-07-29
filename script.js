@@ -166,3 +166,58 @@ setTimeout(typeLetter,25);
 typeLetter();
 
     }
+/* ========================= */
+/* PHASE 5 */
+/* ========================= */
+
+const memories = [
+
+"The first time we talked ❤️",
+
+"Our first picture together 📸",
+
+"The day you made me smile the most 😊",
+
+"Our funniest moment 😂",
+
+"Watching videos together 🎬",
+
+"Every hug you've given me 🤗",
+
+"Every 'I miss you' message ❤️",
+
+"Every call that lasted for hours 📱",
+
+"The way you look at me 🥹",
+
+"Our future together 💍"
+
+];
+
+const memoryBtn=document.getElementById("memoryBtn");
+
+const memoryText=document.getElementById("memoryText");
+
+if(memoryBtn){
+
+memoryBtn.onclick=()=>{
+
+const random=Math.floor(Math.random()*memories.length);
+
+memoryText.innerHTML=memories[random];
+
+}
+
+}
+
+const loveBtn=document.getElementById("loveBtn");
+
+if(loveBtn){
+
+loveBtn.onclick=()=>{
+
+alert("I Love You More Than Words Can Explain ❤️");
+
+}
+
+}
